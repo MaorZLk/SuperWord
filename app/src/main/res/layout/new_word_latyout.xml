@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    tools:context=".New_Word_screen"
+    android:background="?attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textNewWord"
+            android:layout_width="92dp"
+            android:layout_height="33dp"
+            android:text="The new word:"
+            android:textColor="?attr/colorMainTitle"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"/>
+
+        <EditText
+            android:id="@+id/NewWordTextEdit"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Write the new word here"
+            android:textColor="?attr/colorSubTitle"
+            android:textColorHint="?attr/colorSubTitle"
+            android:layout_marginRight="5dp"/>
+
+        <ImageButton
+            android:id="@+id/VoiceToText_Word_NewWordScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorBackground"
+            app:srcCompat="@android:drawable/ic_btn_speak_now"
+            app:tint="?attr/colorMainTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textMeaning"
+            android:layout_width="92dp"
+            android:layout_height="33dp"
+            android:text="The meaning:"
+            android:textColor="?attr/colorMainTitle"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"/>
+
+        <EditText
+            android:id="@+id/MeaningTextEdit"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Write the meaning here"
+            android:textColor="?attr/colorSubTitle"
+            android:textColorHint="?attr/colorSubTitle"
+            android:layout_marginRight="5dp"/>
+
+        <ImageButton
+            android:id="@+id/VoiceToText_Meaning_NewWordScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorBackground"
+            app:srcCompat="@android:drawable/ic_btn_speak_now"
+            app:tint="?attr/colorMainTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:orientation="horizontal"
+        android:gravity="left|top"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textNotes"
+            android:layout_width="92dp"
+            android:layout_height="33dp"
+            android:text="Meaning notes:"
+            android:textColor="?attr/colorMainTitle"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"/>
+
+        <EditText
+            android:id="@+id/NotesTextEdit"
+            android:layout_width="280dp"
+            android:layout_height="193dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="Write your meaning notes here"
+            android:inputType="textMultiLine"
+            android:textColor="?attr/colorSubTitle"
+            android:textColorHint="?attr/colorSubTitle"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/AddNewWordButton"
+        android:layout_width="278dp"
+        android:layout_height="134dp"
+        android:text="Add new word"
+        android:textColor="?attr/colorMainTitle"
+        android:background="?attr/WordImage"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/CancelButton"
+        android:layout_width="278dp"
+        android:layout_height="134dp"
+        android:text="Cancel"
+        android:textColor="?attr/colorMainTitle"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LightTheme" parent="AppTheme">
+        <item name="PacketImage">@drawable/box_light</item>
+        <item name="TrainImage">@drawable/book</item>
+        <item name="WordImage">@drawable/book_word</item>
+        <item name="colorBackground">@color/colorWhite</item>
+        <item name="colorMainTitle">@color/colorBlue</item>
+        <item name="colorSubTitle">@color/colorDarkBlue</item>
+        <item name="colorButtonBackground">#ECECEC</item>
+        <item name="colorListView">#ECECEC</item>
+
+    </style>
+
+    <style name="DarkTheme" parent="AppTheme">
+        <item name="PacketImage">@drawable/box</item>
+        <item name="TrainImage">@drawable/book_dark</item>
+        <item name="WordImage">@drawable/book_dark_quill</item>
+        <item name="colorBackground">@color/colorDarkBlue</item>
+        <item name="colorMainTitle">#85FFFF</item>
+        <item name="colorSubTitle">@color/colorWhite</item>
+        <item name="colorButtonBackground">@color/colorLighterDarkBlue</item>
+        <item name="colorListView">#707070</item>
+    </style>
+
+    <style name="GreyTheme" parent="AppTheme">
+        <item name="PacketImage">@drawable/box_light</item>
+        <item name="TrainImage">@drawable/book</item>
+        <item name="WordImage">@drawable/book_word</item>
+        <item name="colorBackground">#F1F1F1</item>
+        <item name="colorMainTitle">@color/colorBlue</item>
+        <item name="colorSubTitle">@color/colorBlack</item>
+        <item name="colorButtonBackground">@color/LightGrey</item>
+        <item name="colorListView">#F1F1F1</item>
+    </style>
+
+</resources>

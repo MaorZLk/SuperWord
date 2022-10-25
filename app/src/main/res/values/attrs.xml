@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="PacketImage" format="reference"/>
+    <attr name="TrainImage" format="reference"/>
+    <attr name="WordImage" format="reference"/>
+    <attr name="colorBackground" format="color"/>
+    <attr name="colorMainTitle" format="color"/>
+    <attr name="colorSubTitle" format="color"/>
+    <attr name="colorButtonBackground" format="color"/>
+    <attr name="colorListView" format="color"/>
+
+</resources>

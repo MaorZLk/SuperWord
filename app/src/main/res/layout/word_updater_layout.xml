@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".New_Word_screen"
+    android:background="?attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/textNewWord"
+            android:layout_width="92dp"
+            android:layout_height="33dp"
+            android:text="The new word:"
+            android:layout_marginRight="5dp"
+            android:textColor="?attr/colorMainTitle"
+            android:layout_marginLeft="2dp"/>
+
+        <EditText
+            android:id="@+id/WordUpdateTextEdit"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="?attr/colorSubTitle"
+            android:layout_marginRight="5dp"/>
+
+        <ImageButton
+            android:id="@+id/VoiceToText_Word_UpdateScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorBackground"
+            app:srcCompat="@android:drawable/ic_btn_speak_now"
+            app:tint="?attr/colorMainTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/textMeaning"
+            android:layout_width="92dp"
+            android:layout_height="33dp"
+            android:text="The meaning:"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="?attr/colorMainTitle"/>
+
+        <EditText
+            android:id="@+id/MeaningUpdateTextEdit"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginRight="5dp"
+            android:textColor="?attr/colorSubTitle"/>
+
+        <ImageButton
+            android:id="@+id/VoiceToText_Meaning_UpdateScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorBackground"
+            app:srcCompat="@android:drawable/ic_btn_speak_now"
+            app:tint="?attr/colorMainTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:orientation="horizontal"
+        android:gravity="left|top"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textNotes"
+            android:layout_width="92dp"
+            android:layout_height="33dp"
+            android:text="Meaning notes:"
+            android:textColor="?attr/colorMainTitle"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"/>
+
+        <EditText
+            android:id="@+id/NotesUpdateTextEdit"
+            android:layout_width="280dp"
+            android:layout_height="193dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="Write your meaning notes here"
+            android:inputType="textMultiLine"
+            android:textColor="?attr/colorSubTitle"
+            android:textColorHint="?attr/colorSubTitle"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/UpdateButton"
+        android:layout_width="253dp"
+        android:layout_height="130dp"
+        android:text="Update"
+        android:layout_marginTop="10dp"
+        android:textColor="?attr/colorMainTitle"
+        android:background="?attr/WordImage"/>
+
+    <Button
+        android:id="@+id/CancelManagerButton"
+        android:layout_width="253dp"
+        android:layout_height="130dp"
+        android:text="Cancle"
+        android:layout_marginTop="20dp"
+        android:textColor="?attr/colorMainTitle"
+        android:background="@drawable/round_button"/>
+
+</LinearLayout>

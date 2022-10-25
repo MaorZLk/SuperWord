@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    tools:context=".MainScreen"
+    android:background="?attr/colorBackground"
+    >
+
+    <TextView
+        android:id="@+id/ArrowBackButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textColor="?attr/colorSubTitle"
+        android:text="←"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="@drawable/cerclebackground"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/TrainButton"
+            android:layout_width="165dp"
+            android:layout_height="80dp"
+            android:background="?attr/TrainImage"
+            android:text="Train"
+            android:textColor="?attr/colorMainTitle"
+            android:layout_marginRight="25dp"/>
+
+        <Button
+            android:id="@+id/NewWordButton"
+            android:layout_width="165dp"
+            android:layout_height="80dp"
+            android:background="?attr/TrainImage"
+            android:text="Add New Word"
+            android:textColor="?attr/colorMainTitle"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/TimeManagerButton"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="Time Manager"
+        android:textColor="?attr/colorMainTitle"
+        android:layout_marginTop="10dp"
+        />
+
+    <ScrollView
+        android:id="@+id/TimeManagerScrollView"
+        android:layout_width="340dp"
+        android:layout_height="220dp"
+        android:fillViewport="true"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/TimeManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorBackground"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/SundayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_button"
+                android:text="Sunday +0"
+                android:textColor="?attr/colorMainTitle" />
+
+            <Button
+                android:id="@+id/MondayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_button"
+                android:text="Monday +0"
+                android:textColor="?attr/colorMainTitle" />
+
+            <Button
+                android:id="@+id/TuesdayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_button"
+                android:text="Tuesday +0"
+                android:textColor="?attr/colorMainTitle" />
+
+            <Button
+                android:id="@+id/WednesdayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_button"
+                android:text="Wednesday +0"
+                android:textColor="?attr/colorMainTitle" />
+
+            <Button
+                android:id="@+id/ThursdayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_button"
+                android:text="Thursday +0"
+                android:textColor="?attr/colorMainTitle" />
+
+            <Button
+                android:id="@+id/FridayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_button"
+                android:text="Friday +0"
+                android:textColor="?attr/colorMainTitle" />
+
+            <Button
+                android:id="@+id/SaturdayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_button"
+                android:text="Saturday +0"
+                android:textColor="?attr/colorMainTitle" />
+
+            <ListView
+                android:id="@+id/Reviews_of_the_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/wordManagerButton"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:background="@drawable/round_button"
+        android:text="Word Manager"
+        android:textColor="?attr/colorMainTitle"/>
+
+    <ListView
+        android:id="@+id/Word_Manager"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:transcriptMode="alwaysScroll"
+        />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings_Screen"
+    android:orientation="vertical"
+    android:background="?attr/colorBackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="settings"
+        android:gravity="center"
+        android:textColor="?attr/colorMainTitle"
+        android:textSize="25dp"
+        android:paddingTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Background:"
+        android:textSize="20dp"
+        android:textColor="?attr/colorSubTitle"
+        android:textStyle="bold"
+        android:paddingTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/BackgroundColorManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:id="@+id/LightMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="light"
+            android:textColor="?attr/colorSubTitle"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/DarkMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dark"
+            android:textSize="20dp"
+            android:textColor="?attr/colorSubTitle"/>
+
+        <RadioButton
+            android:id="@+id/GreyMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grey"
+            android:textColor="?attr/colorSubTitle"
+            android:textSize="20dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification frequency:"
+        android:textColor="?attr/colorSubTitle"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/Notification_frequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:id="@+id/none_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="none"
+            android:textColor="?attr/colorSubTitle"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/daily_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="daily"
+            android:textSize="20dp"
+            android:textColor="?attr/colorSubTitle"/>
+
+        <RadioButton
+            android:id="@+id/semiweekly_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="semiweekly"
+            android:textColor="?attr/colorSubTitle"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/weekly_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="weekly"
+            android:textColor="?attr/colorSubTitle"
+            android:textSize="20dp"/>
+
+    </RadioGroup>
+
+</LinearLayout>

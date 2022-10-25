@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SuperWord</string>
+    <string name="channel_name">SuperWord</string>
+    <string name="channel_description">Sending the user notification of ready words</string>
+
+    <string name="Notification_frequncy">Notification Frequency</string>
+    <string name="Background_color">Background color</string>
+
+    <string name="Origin_Activity">Origin Activity</string>
+    <string name="Tables_screen">Tables Screen</string>
+    <string name="MainScreen">Main Screen</string>
+    <string name="new_word_layout">new word layout</string>
+    <string name="Train_Screen">Train Screen</string>
+    <string name="Word_Updater_Screen">Word Updater Screen</string>
+
+
+    <string name="Notification_Running">Notification Service Running</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Train_Screen"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:background="?attr/colorBackground">
+
+    <TextView
+        android:id="@+id/NewWord"
+        android:layout_width="364dp"
+        android:layout_height="179dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TextView"
+        android:textSize="50dp"
+        android:textColor="?attr/colorMainTitle"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/MeaningTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Write the meaning here"
+        android:inputType="textPersonName"
+        android:textColor="?attr/colorSubTitle"
+        android:textColorHint="?attr/colorSubTitle"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="383dp"
+        android:layout_height="219dp">
+
+        <TextView
+            android:id="@+id/NotesText"
+            android:layout_width="383dp"
+            android:layout_height="219dp"
+            android:text="Notes"
+            android:hint="Your notes"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:scrollbars = "vertical"/>
+
+        <EditText
+            android:id="@+id/EditNotesText"
+            android:layout_width="383dp"
+            android:layout_height="219dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:text="Name"
+            android:textColor="?attr/colorSubTitle"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/NotesText"
+            android:layout_alignBottom="@+id/NotesText"/>
+
+        <Button
+            android:id="@+id/UpdateNotesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Notes"
+            android:scrollbars = "vertical"
+            android:visibility="invisible"
+            android:textColor="?attr/colorMainTitle"
+            android:background="?attr/colorButtonBackground"
+            android:layout_alignBottom="@+id/EditNotesText"
+            android:layout_alignRight="@+id/EditNotesText"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:id="@+id/ExitButton"
+            android:layout_width="162dp"
+            android:layout_height="78dp"
+            android:text="Exit"
+            android:textColor="?attr/colorMainTitle"
+            android:background="@drawable/round_button"
+            android:layout_marginRight="25dp"/>
+
+        <Button
+            android:id="@+id/CheckButton"
+            android:layout_width="162dp"
+            android:layout_height="78dp"
+            android:text="Check"
+            android:textColor="?attr/colorMainTitle"
+            android:background="@drawable/round_button"/>
+
+    </LinearLayout>
+</LinearLayout>

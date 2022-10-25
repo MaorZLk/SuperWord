@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tables_Screen"
+    android:id="@+id/screen"
+    android:background="?attr/colorBackground"
+    android:orientation="vertical"
+    android:gravity="center|top">
+
+
+    <Button
+        android:id="@+id/NewTable"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Create new word pack"
+        android:textColor="?attr/colorSubTitle"
+        android:paddingTop="60dp"
+        android:background="?attr/PacketImage"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"/>
+
+    <ListView
+        android:id="@+id/Table_Manager"
+        android:layout_width="360dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>

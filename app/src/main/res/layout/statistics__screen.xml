@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statistics_Screen"
+    android:orientation="vertical"
+    android:background="?attr/colorBackground">
+
+    <RadioGroup
+        android:id="@+id/RadioGroupStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:padding="20dp">
+
+        <RadioButton
+            android:id="@+id/InsertOrderRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Insert Time"
+            android:textColor="?attr/colorMainTitle"/>
+
+        <RadioButton
+            android:id="@+id/SuccessRateOrderRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Success Rate - From Top to Bottom"
+            android:textColor="?attr/colorMainTitle"/>
+
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/statistics_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
